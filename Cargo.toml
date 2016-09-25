@@ -1,0 +1,15 @@
+[package]
+name = "project_euler"
+version = "0.1.0"
+authors = ["Scott Manifold <shm.qed@gmail.com>"]
+
+
+[lib]
+name = "project_euler"
+path = "src/lib.rs"
+
+[[bin]]
+name = "prototype"
+path = "src/main.rs"
+
+[dependencies]
