@@ -6,5 +6,4 @@ fn main() {
     let mut cache = DivisorCache::new();
 
     println!("{}", cache.get(2));
-    println!("{}", cache.get(28));
 }
