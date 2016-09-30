@@ -2,7 +2,7 @@
 //! A collection of functions for solving Project Euler questions.
 //! Based upon the parameters for the Hacker Rank implementations
 
-//! Currently missing: #4, #7
+//! Currently missing: #4, #7, #13
 
 //======================================================================
 // Problem 1
@@ -531,5 +531,60 @@ pub fn triangle_divisors(n: i64, cache: &mut DivisorCache) -> i64 {
 }
 
 //======================================================================
-// Problem 12
+// Problem 13
 //======================================================================
+
+//======================================================================
+// Problem 14
+//======================================================================
+// Need to rethink and restructure this
+pub struct CollatzCache {
+    collatz: HashMap<i64,i64>,
+}
+
+impl CollatzCache {
+    pub fn new() -> CollatzCache {
+        let mut cache = HashMap::new();
+        cache.insert(1,1);
+        CollatzCache{ collatz: cache }
+    }
+
+    fn get(&mut self, key: i64) -> i64 {
+        if !self.collatz.contains_key(&key) {
+            let mut offset: i64 = 1;
+            let mut current: i64 = key;
+            let mut stack: Vec<i64> = vec![current];
+            let mut base_offset: i64 = 0;
+            while current > 1 {
+                if current % 2 != 0 {
+                    current = 3*current + 1;
+                } else {
+                    current /= 2;
+                }
+                if self.collatz.contains_key(&current) {
+                    base_offset = *self.collatz.get(&current).unwrap();
+                    break;
+                }
+                offset += 1;
+                stack.push(current);
+            }
+
+            for i in 1..(offset+1) {
+                let new_key: i64 = stack.pop().unwrap();
+                self.collatz.insert(new_key, base_offset+i);
+            }
+
+        }
+        *self.collatz.get(&key).unwrap()
+
+    }
+}
+
+
+pub fn longest_collatz(n: i64, cache: &mut CollatzCache) -> i64 {
+    ((n/2)..(n+1)).map(|x| cache.get(x))
+            .enumerate()
+            .max_by_key(|x| x.1)
+            .unwrap()
+            .0 as i64 + (n/2)
+}

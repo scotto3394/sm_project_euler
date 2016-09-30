@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["read_grid",""],["read_hacker_rank","Code used for reading in generic input for Hacker Rank Problem Euler challenges."]],"mod":[["solutions","A collection of functions for solving Project Euler questions. Based upon the parameters for the Hacker Rank implementations Currently missing: #4, #7, #13"]]});

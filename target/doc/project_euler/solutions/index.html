@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `solutions` mod in crate `project_euler`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, solutions">
+
+    <title>project_euler::solutions - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>project_euler</a></p><script>window.sidebarCurrent = {name: 'solutions', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>project_euler</a>::<wbr><a class='mod' href=''>solutions</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-4' class='srclink' href='../../src/project_euler/src/solutions.rs.html#2-590' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>A collection of functions for solving Project Euler questions.
+Based upon the parameters for the Hacker Rank implementations
+Currently missing: #4, #7, #13</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CollatzCache.html'
+                                  title='project_euler::solutions::CollatzCache'>CollatzCache</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DivisorCache.html'
+                                  title='project_euler::solutions::DivisorCache'>DivisorCache</a></td>
+                           <td class='docblock short'>
+                                <p>Stores the number of factors a number has in a HashMap.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FibThree.html'
+                                  title='project_euler::solutions::FibThree'>FibThree</a></td>
+                           <td class='docblock short'>
+                                <p>Holds and implements even Fibonacci numbers</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PrimeCache.html'
+                                  title='project_euler::solutions::PrimeCache'>PrimeCache</a></td>
+                           <td class='docblock short'>
+                                <p>Store and generate a vector of primes.</p>
+                           </td>
+                       </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.compute_multiple.html'
+                                  title='project_euler::solutions::compute_multiple'>compute_multiple</a></td>
+                           <td class='docblock short'>
+                                <p>Computes the smallest multiple of all the integers from 1 to n, n \in Integers.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.count_even.html'
+                                  title='project_euler::solutions::count_even'>count_even</a></td>
+                           <td class='docblock short'>
+                                <p>Sums the even Fibonacci numbers up to an integer, n.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.grid_prod.html'
+                                  title='project_euler::solutions::grid_prod'>grid_prod</a></td>
+                           <td class='docblock short'>
+                                <p>Move across a grid and computes products of k sequential numbers in each direction.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.largest_prime_factor.html'
+                                  title='project_euler::solutions::largest_prime_factor'>largest_prime_factor</a></td>
+                           <td class='docblock short'>
+                                <p>Solves for the larget prime factor of an integer, n.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.largest_product.html'
+                                  title='project_euler::solutions::largest_product'>largest_product</a></td>
+                           <td class='docblock short'>
+                                <p>Find the largest product of k sequential numbers in a sequence of n digits.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.longest_collatz.html'
+                                  title='project_euler::solutions::longest_collatz'>longest_collatz</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.pythagorean_triplets.html'
+                                  title='project_euler::solutions::pythagorean_triplets'>pythagorean_triplets</a></td>
+                           <td class='docblock short'>
+                                <p>Given N, finds the maximum product, a*b*c, of pythagorean triples {(a,b,c)| a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup> } such that a+b+c = N.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.squared_sum_diff.html'
+                                  title='project_euler::solutions::squared_sum_diff'>squared_sum_diff</a></td>
+                           <td class='docblock short'>
+                                <p>Finds the absolute difference between the sum of squares, 1<sup>2</sup> + 2<sup>2</sup> + ... + n<sup>2,</sup> and the square of the sum, (1 + 2 + ... + n)<sup>2.</sup></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.sum_multiples.html'
+                                  title='project_euler::solutions::sum_multiples'>sum_multiples</a></td>
+                           <td class='docblock short'>
+                                <p>Sums up all the multiples of two integers [a,b] up to a certain integer n.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.sum_primes.html'
+                                  title='project_euler::solutions::sum_primes'>sum_primes</a></td>
+                           <td class='docblock short'>
+                                <p>Sums up primes up to an integer n.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.triangle_divisors.html'
+                                  title='project_euler::solutions::triangle_divisors'>triangle_divisors</a></td>
+                           <td class='docblock short'>
+                                <p>Finds the smallest triangular number, T_n, such that the number of factors of T_n is greater than a specified integer N.</p>
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "project_euler";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

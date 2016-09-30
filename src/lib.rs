@@ -3,9 +3,7 @@ pub mod solutions;
 #[cfg(test)]
 mod tests;
 
-
 use std::io;
-
 
 /// Code used for reading in generic input for Hacker Rank Problem Euler challenges.
 pub fn read_hacker_rank () -> Vec<i64> {
